@@ -12,10 +12,10 @@ DeltaBlock is only designed for use via NextDNS, which is limited to 300,000 que
 Help DeltaBlock remain running by sharing this link:
 https://nextdns.io/?from=pyukpkuc
 
-*According to Toolz AdBlock Test.<br>
+*According to Toolz AdBlock Test. This percentage varies depending on network variables. DeltaBlock stops an average of 96% of ads at all times based on testing between both iOS and macOS devices. The lowest percentage resulting from testing has been 93%, under strenuous network variables with ad-heavy pages.<br>
 ### Readme Contents
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
-[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)
+[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
 
 # Installation
 ## iOS, iPadOS, macOS, Android
