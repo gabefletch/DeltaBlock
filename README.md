@@ -5,6 +5,10 @@ A custom DNS profile for NextDNS (list also available) capable of blocking up to
 DeltaBlock stops both web-based and in-app ads from loading.<br>
 A project by [@gabfletch](https://github.com/gabefletch).<br>
 
+**NextDNS Affiliate Link:**<br>
+Help DeltaBlock remain running by sharing this link:
+https://nextdns.io/?from=pyukpkuc
+
 *According to Toolz AdBlock Test.<br>
 ### Readme Contents
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
