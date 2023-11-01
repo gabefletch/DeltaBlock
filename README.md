@@ -5,7 +5,10 @@ A custom DNS profile for NextDNS (list also available) capable of blocking up to
 DeltaBlock stops both web-based and in-app ads from loading.<br>
 A project by [@gabfletch](https://github.com/gabefletch).<br>
 
-**NextDNS Affiliate Link:**<br>
+### Notice for New NextDNS Users
+DeltaBlock is only designed for use via NextDNS, which is limited to 300,000 queries per month without a subscription. The lowest tier with unlimited queries is available for $1.99/month.<br>
+
+### NextDNS Affiliate Link
 Help DeltaBlock remain running by sharing this link:
 https://nextdns.io/?from=pyukpkuc
 
