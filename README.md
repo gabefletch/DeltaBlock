@@ -66,7 +66,7 @@ DNSOverTLS=yes
 
 # Included Blocklists
 ### NextDNS Ads & Trackers Blocklist
-A comprehensive blocklist to block ads & trackers in all countries. This is the recommended starter blocklist.<br>
+A comprehensive blocklist to block ads & trackers in all countries.<br>
 - 151,328 entries.<br>
 ### AdGuard DNS Filter
 A filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile ads filter, EasyList, and EasyPrivacy) and simplified specifically to be better compatible with DNS-level adblocking.<br>
