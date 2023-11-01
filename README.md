@@ -3,19 +3,38 @@
 
 A custom DNS profile for NextDNS (list also available) capable of blocking up to 99%* of ads.<br>
 DeltaBlock stops both web-based and in-app ads from loading.<br>
+A project by [@gabfletch](https://github.com/gabefletch).<br>
 
 *According to Toolz AdBlock Test.<br>
+### Readme Contents
+[Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
+[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)
 
 # Installation
-## iOS, iPadOS, macOS, Windows, Android
+## iOS, iPadOS, macOS, Android
 ### Via NextDNS App (Recommended)
 - Install the NextDNS app on your device of choice
-(Available for iOS, iPadOS, macOS, Windows, Android)
+(Available for iOS, iPadOS, macOS or Android)
 - Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
 ### Via Apple Config File
 (Apple Devices Only)
 - [Click here](https://apple.nextdns.io/?profile=4b3fba) to be taken for the NextDNS Apple Config Profile generator for DeltaBlock.
 - Download and install the profile via the Settings app.
+## Windows
+### Via NextDNS App (Recommended)
+- Install the NextDNS app by [clicking here](https://nextdns.io/download/windows/stable).
+- Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
+### or via DNS Over HTTPS (Windows 11 Only)
+- Open the Settings app
+- Go to Network & Internet
+- Click on WiFi (or Ethernet)
+- Click on Hardware Properties (or ignore this if you clicked Ethernet)
+- Click the Edit button next to DNS Server Assignment
+- Select Manual
+- Enable IPv4
+- Enter `45.90.28.0` as Preferred DNS, then select On (manual template) and enter `https://dns.nextdns.io/4b3fba`
+- Enter `45.90.30.0` as Alternate DNS, then select On (manual template) and enter `https://dns.nextdns.io/4b3fba`
+- Click Save
 ## Linux
 ### Via systemd-resolved (Recommended)
 - Use the following in /etc/systemd/resolved/.conf:<br>
