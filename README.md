@@ -64,6 +64,14 @@ DNSOverTLS=yes
 ## Routers
 - Utilize [NextDNS CLI](https://github.com/nextdns/nextdns/wiki).
 
+## DNS-over-TLS/QUIC
+`4b3fba.dns.nextdns.io`
+## DNS-over-HTTPS
+`https://dns.nextdns.io/4b3fba`
+## DNS via IPv6
+`2a07:a8c0::4b:3fba`<br>
+`2a07:a8c1::4b:3fba`
+
 # Included Blocklists
 ### NextDNS Ads & Trackers Blocklist
 A comprehensive blocklist to block ads & trackers in all countries.<br>
