@@ -1,7 +1,7 @@
 <img src="https://github.com/gabefletch/DeltaBlock/assets/38300939/02815979-f67d-4dee-8865-178973114236" width=400><br>
 
 
-A custom DNS profile for NextDNS (list also available) capable of blocking up to 99%* of ads.<br>
+A custom DNS profile for NextDNS capable of blocking up to 99%* of ads.<br>
 DeltaBlock stops both web-based and in-app ads from loading.<br>
 A project by [@gabefletch](https://github.com/gabefletch).<br>
 
