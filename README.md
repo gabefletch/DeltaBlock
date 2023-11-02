@@ -3,7 +3,7 @@
 
 A custom DNS profile for NextDNS (list also available) capable of blocking up to 99%* of ads.<br>
 DeltaBlock stops both web-based and in-app ads from loading.<br>
-A project by [@gabfletch](https://github.com/gabefletch).<br>
+A project by [@gabefletch](https://github.com/gabefletch).<br>
 
 ### Notice for New NextDNS Users
 DeltaBlock is only designed for use via NextDNS, which is limited to 300,000 queries per month without a subscription. The lowest tier with unlimited queries is available for $1.99/month. Using the DeltaBlock custom profile, however, is completely free.
