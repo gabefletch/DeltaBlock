@@ -17,6 +17,7 @@ https://nextdns.io/?from=pyukpkuc
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
 [Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
 [Changes](https://github.com/gabefletch/DeltaBlock#changes)<br>
+[Frequently Asked Questions](https://github.com/gabefletch/DeltaBlock#FAQ)<br>
 
 # Installation
 ## iOS, iPadOS, macOS, Android
@@ -116,3 +117,20 @@ Improve your security and privacy by blocking ads, tracking and malware domains.
 ## v1.0
 1 November 2023
 - Initial launch
+# FAQ
+### Should DeltaBlock replace my browser's adblocker extension?
+No. While DeltaBlock has a high blocking percentage, DeltaBlock or any DNS-enabled adblocking system is not capable of getting rid of the site elements where an ad would load like uBlock Origin is capable of. In other words, only using DeltaBlock would block ads just fine, but empty spaces would still be present on the page where the ads would originally be.
+### Can I use DeltaBlock along with an adblocker extension?
+Yes, and we recommend this. See the above question.
+### Why Do Some Blocklists say "0 Entries"?
+This is most likely because the author of the blocklist forgot to enter a number for NextDNS to report the entry count when they added it. All blocklist information on this page is derived directly from their listing on NextDNS.
+### Can I Use DeltaBlock without paying for NextDNS?
+Yes, but you'll be limited to 300,000 queries per month, after which the effects of DeltaBlock will stop working until the next month. NextDNS offers unlimited queries starting at $1.99/month.
+### Can I Use DeltaBlock With a Different DNS Service?
+Direct support for other DNS services is planned in the future, but no official support exists for DeltaBlock on any service other than NextDNS currently. It is possible to utilize the [NextDNS CLI](https://github.com/nextdns/nextdns/wiki) or export the domain list used by DeltaBlock using third party tools to achieve this. We plan to directly provide this list in the future.
+### Where Is The Blocking Perecentage Derived From?
+All testing for blocking precentage is dervied from the open-source [Toolz Adblock Test](https://d3ward.github.io/toolz/adblock.html). This percentage is directly effected by differing network variables and may be skewed by the adblocker used by your browser along with DeltaBlock. The highest blocking percentage for DeltaBlock based on iOS and macOS devices is up to 99%. DeltaBlock's lowest internal testing percentage is 93%, although you may see lower numbers depending on your network environment.
+### Why Should I Use DeltaBlock Instead of a Browser-based Adblocker?
+Because DeltaBlock is a DNS service, it blocks ads across every app on your device instead of being confined to just your browser. The greatest use for this is in-app adblocking on iOS and Android devices. We recommend that you use DeltaBlock and a browser-based adblocker (such as uBlock Origin) in tandem with one another to get rid of visual leftovers caused as a result of ads not loading.
+### Got another question?
+Feel free to reach out to DeltaBlock's developer at [dub.sh/gabe](https://dub.sh/gabe) via the contact form or your preferred social media.
