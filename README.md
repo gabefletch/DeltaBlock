@@ -100,15 +100,15 @@ https://github.com/Yhonay/antipopads
 ### HaGeZi - Multi ULTIMATE
 Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.<br>
 - 441,998 entries<br>
-github.com/hagezi/dns-blocklists
+https://github.com/hagezi/dns-blocklists
 ### Energized Ultimate
 Strictly blocks advertisements, malwares, spams, statistics & trackers on both web browsing and applications. Flagship Protection Pack from Energized Protection.
 -  0 entries<br>
-github.com/EnergizedProtection/block
+https://github.com/EnergizedProtection/block
 ### hBlock
 Improve your security and privacy by blocking ads, tracking and malware domains.
 - 440,885 entries<br>
-  hblock.molinero.dev
+  https://hblock.molinero.dev
 # Changes
 ## v1.0.1
 2 November 2023
