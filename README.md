@@ -16,6 +16,7 @@ https://nextdns.io/?from=pyukpkuc
 ### Readme Contents
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
 [Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
+[Changes](https://github.com/gabefletch/DeltaBlock#changes)<br>
 
 # Installation
 ## iOS, iPadOS, macOS, Android
@@ -92,3 +93,26 @@ https://kb.adguard.com/general/adguard-ad-filters#mobile-ads-filter
 Specifically designed for mobile ad protection.
 - 400,655 entries<br>
   https://github.com/jerryn70/GoodbyeAds
+### antipopads
+List of popads.net domains.
+- 755 entries<br>
+https://github.com/Yhonay/antipopads
+### HaGeZi - Multi ULTIMATE
+Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.<br>
+- 441,998 entries<br>
+github.com/hagezi/dns-blocklists
+### Energized Ultimate
+Strictly blocks advertisements, malwares, spams, statistics & trackers on both web browsing and applications. Flagship Protection Pack from Energized Protection.
+-  0 entries<br>
+github.com/EnergizedProtection/block
+### hBlock
+Improve your security and privacy by blocking ads, tracking and malware domains.
+- 440,885 entries<br>
+  hblock.molinero.dev
+# Changes
+## v1.0.1
+2 November 2023
+- Adds "antipopads," "HaGeZi - Multi ULTIMATE," "Energized Ultimate," and "hBlock" to the list of included blocklists.
+## v1.0
+1 November 2023
+- Initial launch
