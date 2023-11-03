@@ -35,10 +35,7 @@ DeltaBlock, like most adblockers, can be detected by sites with anti-adblock mea
 - [Click here](https://apple.nextdns.io/?profile=4b3fba) to be taken for the NextDNS Apple Config Profile generator for DeltaBlock.
 - Download and install the profile via the Settings app.
 ## Windows
-### Via NextDNS App (Recommended)
-- Install the NextDNS app by [clicking here](https://nextdns.io/download/windows/stable).
-- Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
-### or via DNS Over HTTPS (Windows 11 Only)
+### Via DNS Over HTTPS (Windows 11 Only)
 - Open the Settings app
 - Go to Network & Internet
 - Click on WiFi (or Ethernet)
@@ -49,6 +46,10 @@ DeltaBlock, like most adblockers, can be detected by sites with anti-adblock mea
 - Enter `45.90.28.0` as Preferred DNS, then select On (manual template) and enter `https://dns.nextdns.io/4b3fba`
 - Enter `45.90.30.0` as Alternate DNS, then select On (manual template) and enter `https://dns.nextdns.io/4b3fba`
 - Click Save
+### or via NextDNS App (Not Recommended)
+- Install the NextDNS app by [clicking here](https://nextdns.io/download/windows/stable).
+- Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
+
 ## Linux
 ### Via systemd-resolved (Recommended)
 - Use the following in /etc/systemd/resolved/.conf:<br>
