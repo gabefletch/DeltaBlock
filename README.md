@@ -12,6 +12,9 @@ DeltaBlock is only designed for use via NextDNS, which is limited to 300,000 que
 Help DeltaBlock remain running by sharing this link:
 https://nextdns.io/?from=pyukpkuc
 
+### Services With Anti-Adblocking Measures
+DeltaBlock, like most adblockers, can be detected by sites with anti-adblock measures. YouTube on both mobile and desktop sites and some news sites are the most common examples of this. In other words, DeltaBlock cannot work properly on every site. If you're looking to get past adblock detection on YouTube, [see this guide](https://github.com/psychon-night/bypass-youtube-adblock-blocker/tree/main).<br>
+
 *According to Toolz AdBlock Test. This percentage varies depending on network variables. DeltaBlock stops an average of 96% of ads at all times based on testing between both iOS and macOS devices. The lowest percentage resulting from testing has been 93%, under strenuous network variables with ad-heavy pages.<br>
 ### Readme Contents
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
