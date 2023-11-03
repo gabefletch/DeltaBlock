@@ -115,8 +115,15 @@ https://github.com/EnergizedProtection/block
 ### hBlock
 Improve your security and privacy by blocking ads, tracking and malware domains.
 - 440,885 entries<br>
-  https://hblock.molinero.dev
+  https://hblock.molinero.dev<br>
+
+DeltaBlock also utilizes an internal Denylist that is periodically updated to compliment domains not covered by the Blocklists above.<br>
+[View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)
 # Changes
+## v1.1
+3 November 2023
+- Adds several domains to DeltaBlock's internal Denylist to compliment domains not covered by existing Blocklists.
+- Adds the ability to see DeltaBlock's internal Denylist in this GitHub repo.
 ## v1.0.1
 2 November 2023
 - Adds "antipopads," "HaGeZi - Multi ULTIMATE," "Energized Ultimate," and "hBlock" to the list of included blocklists.
