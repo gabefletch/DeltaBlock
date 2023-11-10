@@ -118,8 +118,14 @@ Improve your security and privacy by blocking ads, tracking and malware domains.
   https://hblock.molinero.dev<br>
 
 DeltaBlock also utilizes an internal Denylist that is periodically updated to compliment domains not covered by the Blocklists above.<br>
-[View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)
+[View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)<br>
+In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
+[View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
 # Changes
+## v1.2
+10 November 2023
+- Adds `click.discord.com` to DeltaBlock's internal Allowlist to fix errors connecting to Discord's account verification servers with previous versions of DeltaBlock.
+- You can now also [view DeltaBlock's Allowlist](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md).
 ## v1.1
 3 November 2023
 - Adds several domains to DeltaBlock's internal Denylist to compliment domains not covered by existing Blocklists.
