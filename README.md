@@ -69,7 +69,7 @@ DNSOverTLS=yes
 - Select "With:Custom" and enter `https://dns.nextdns.io/4b3fba`
 
 ## Routers
-- Utilize [NextDNS CLI](https://github.com/nextdns/nextdns/).
+- Utilize the [NextDNS CLI Client](https://github.com/nextdns/nextdns/#nextdns-cli-client).
 
 ## DNS-over-TLS/QUIC
 `4b3fba.dns.nextdns.io`
