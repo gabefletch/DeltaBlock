@@ -121,6 +121,9 @@ DeltaBlock also utilizes an internal Denylist that is periodically updated to co
 In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
 [View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
 # Changes
+## v2.0.1
+26 January 2024
+- Adds `netlify.com` and `app.netlify.com` to DeltaBlock's internal allowlist to address reported problems with accessing Netlify.
 ## v2.0
 5 December 2023
 - Integrates NextDNS "Block Bypass Methods" tool in order to prevent or hinder the use of methods that can help bypass DNS filtering on a network. This includes VPNs, proxies, Tor-related software, and encrypted DNS providers. Those who typically use more restrictive public networks, or home networks with restrictive ISPs may now be able to properly use DeltaBlock.
