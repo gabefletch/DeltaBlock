@@ -121,6 +121,9 @@ DeltaBlock also utilizes an internal Denylist that is periodically updated to co
 In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
 [View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
 # Changes
+## v2.1
+29 January 2024
+- Adds several OEM related domains from smartphone manufacturers including Realme, Xiaomi, Oppo, Huawei (more), OnePlus, Samsung, and Apple (more) from the AdBlock Toolz d3Host list.
 ## v2.0.1
 26 January 2024
 - Adds `netlify.com` and `app.netlify.com` to DeltaBlock's internal allowlist to address reported problems with accessing Netlify.
