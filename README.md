@@ -2,6 +2,12 @@
 
 
 [Skip to Installation Steps](https://github.com/gabefletch/DeltaBlock#installation)<br>
+### Readme Contents
+[Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
+[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
+[Known Issues](https://github.com/gabefletch/DeltaBlock#known-issues)<br>
+[Changes](https://github.com/gabefletch/DeltaBlock#changes)<br>
+[Frequently Asked Questions](https://github.com/gabefletch/DeltaBlock#FAQ)<br>
 
 A custom DNS profile for NextDNS capable of blocking up to 99%* of ads.<br>
 DeltaBlock stops both web-based and in-app ads from loading.<br>
@@ -17,11 +23,6 @@ https://nextdns.io/?from=pyukpkuc
 DeltaBlock, like most adblockers, can be detected by sites with anti-adblock measures. YouTube on both mobile and desktop sites and some news sites are the most common examples of this. In other words, DeltaBlock cannot work properly on every site. If you're looking to get past adblock detection on YouTube, [see this guide](https://github.com/psychon-night/bypass-youtube-adblock-blocker/tree/main).<br>
 
 *According to Toolz AdBlock Test. This percentage varies depending on network variables. DeltaBlock stops an average of 96% of ads at all times based on testing between both iOS and macOS devices. The lowest percentage resulting from testing has been 93%, under strenuous network variables with ad-heavy pages.<br>
-### Readme Contents
-[Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
-[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
-[Changes](https://github.com/gabefletch/DeltaBlock#changes)<br>
-[Frequently Asked Questions](https://github.com/gabefletch/DeltaBlock#FAQ)<br>
 
 # Installation
 ## iOS, iPadOS, macOS, Android
@@ -120,6 +121,12 @@ DeltaBlock also utilizes an internal Denylist that is periodically updated to co
 [View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)<br>
 In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
 [View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
+# Known Issues
+## Meta Apps Connectivity
+- Using DeltaBlock has been known to cause issues with sites and apps by Meta (ie. Facebook, Instagram).<br>
+This issue is difficult to resolve based on how NextDNS domain allowing works; simply allowing `instagram.com` or `facebook.com` would also allow all ad subdomains, meaning that all Meta ad domains need to be manually entered.<br>
+
+**Work Around:** Temporarily disable DeltaBlock.<br>
 # Changes
 ## v2.1.1
 31 January 2024
