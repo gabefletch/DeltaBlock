@@ -128,6 +128,25 @@ This issue is difficult to resolve based on how NextDNS domain allowing works; s
 
 **Work Around:** Temporarily disable DeltaBlock.<br>
 # Changes
+## v2.2
+20 February 2024
+- Adds several Meta related domains to attempt to address proper connectivity to Meta services (ie. Facebook, Instagram)
+- Adds domains used for loading "Sponsored" image content on Instagram to attempt to add Instagram ad blocking capability to DeltaBlock
+- The following domains were added:
+    - `yt3.ggpht.com`
+    - `adserver.snapads.com`
+    - `adserver.shadow.snapads.com`
+    - `beacons.gvt2.com`
+    - `star-mini.c10r.facebook.com`
+    - `static.matterport.com`
+    - `connect.facebook.net`
+    - `my.matterport.com`
+    - `mqtt.c10r.facebook.com`
+    - `edge-mqtt.facebook.com`
+    - `telegraph-ash.instagram.com`
+    - `white.ish.instagram.com`
+    - `instagram.c10r.facebook.com`
+    - `instagram.ford1-1.fna.fbcdn.net`
 ## v2.1.1
 31 January 2024
 - Adds `sendgrid.net` to the Allowlist to fix issues with trusted email-based redirects.
