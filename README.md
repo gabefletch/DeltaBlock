@@ -50,7 +50,7 @@ DeltaBlock, like most adblockers, can be detected by sites with anti-adblock mea
 - Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
 
 ## Linux
-### Via systemd-resolved (Recommended)
+### Via systemd-resolved
 - Use the following in /etc/systemd/resolved/.conf:<br>
 ```
 [Resolve]
@@ -62,7 +62,7 @@ DNSOverTLS=yes
 ```
 
 ## ChromeOS
-### Via Secure DNS (Recommended)
+### Via Secure DNS
 - Open the Settings app
 - Go to Security and Privacy
 - Enable "Use Secure DNS"
