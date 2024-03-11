@@ -128,6 +128,22 @@ This issue is difficult to resolve based on how NextDNS domain allowing works; s
 
 **Work Around:** Temporarily disable DeltaBlock.<br>
 # Changes
+## v2.2.1
+11 March 2024
+- Disables a handful of the URLs added to the denylist in the previous update (v2.2) in order to address some non-ad images not loading properly
+- The following domains are now allowed again:
+   - `instagram.ford1-1.fna.fbcdn.net`
+   - `instagram.c10r.facebook.com`
+   - `white.ish.instagram.com`
+   - `telegraph-ash.instagram.com`
+   - `edge-mqtt.facebook.com`
+   - `mqtt.c10r.facebook.com`
+   - `my.matterport.com`
+   - `connect.facebook.net`
+   - `static.matterport.com`
+   - `star-mini.c10r.facebook.com`
+   - `beacons.gvt2.com`
+   - `yt3.ggpht.com`
 ## v2.2
 20 February 2024
 - Adds several Meta related domains to attempt to address proper connectivity to Meta services (ie. Facebook, Instagram)
