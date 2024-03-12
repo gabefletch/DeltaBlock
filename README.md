@@ -128,8 +128,69 @@ This issue is difficult to resolve based on how NextDNS domain allowing works; s
 
 **Work Around:** Temporarily disable DeltaBlock.<br>
 # Changes
-## v2.2.1
+## v2.3
 11 March 2024
+- Adds several major ad-related and analytics-related domains to the denylist, now reaching up to 100% blocking capability on the Toolz Adblock Test for the first time
+- The following domains were added to the denylist:
+  - `pagead2.googlesyndication.com`
+  - `adservice.google.com`
+  - `pagead2.googleadservices.com`
+  - `static.media.net`
+  - `media.net`
+  - `doubleclick.net`
+  - `ad.doubleclick.net`
+  - `static.doubleclick.net`
+  - `m.doubleclick.net`
+  - `mediavisor.doubleclick.net`
+  - `fastclick.com`
+  - `adtogo.s3.amazonaws.com`
+  - `assoc-amazon.com`
+  - `google-analytics.com`
+  - `ssl.google-analytics.com`
+  - `hotjar.com`
+  - `static.hotjar.com`
+  - `a.mouseflow.com`
+  - `freshmarketer.com`
+  - `ads.facebook.com`
+  - `pixel.facebook.com`
+  - `ads.pinterest.com`
+  - `ads-dev.pinterest.com`
+  - `trk.pinterest.com`
+  - `analytics.pinterest.com`
+  - `ads.reddit.com`
+  - `rereddit.com`
+  - `events.redditmedia.com`
+  - `ads.youtube.com`
+  - `analytics.tiktok.com`
+  - `ads.tiktok.com`
+  - `ads.yahoo.com`
+  - `global.adserver.yahoo.com`
+  - `analytics.yahoo.com`
+  - `ads.yap.yahoo.com`
+  - `appmetrica.yandex.com`
+  - `yandexadexchange.net`
+  - `analytics.mobile.yandex.net`
+  - `app.chat.xiaomi.net`
+  - `glabalapi.ad.intl.xiaomi.com`
+  - `cdn.ad.xiaomi.com`
+  - `tracking.miui.com`
+  - `tracking.intl.miui.com`
+  - `metrics1.data.hicloud.com`
+  - `metrics3.data.hicloud.com`
+  - `metrics4.data.hicloud.com`
+  - `metrics5.data.hicloud.com`
+  - `metrics-dra.dt.hicloud.com`
+  - `ad.samsungadhub.com`
+  - `samsungadhub.com`
+  - `business.samsungusa.com`
+  - `analytics.samsungknox.com`
+  - `config.samsungads.com`
+  - `securemetrics.apple.com`
+  - `supportmetrics.apple.com`
+  - `metrics.icloud.com`
+  - `metrics.mzstatic.com`
+## v2.2.1
+10 March 2024
 - Disables a handful of the URLs added to the denylist in the previous update (v2.2) in order to address some non-ad images not loading properly
 - The following domains are now allowed again:
    - `instagram.ford1-1.fna.fbcdn.net`
