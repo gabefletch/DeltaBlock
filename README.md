@@ -1,5 +1,4 @@
-<img src="https://github.com/gabefletch/DeltaBlock/assets/38300939/02815979-f67d-4dee-8865-178973114236" width=400><br>
-
+# δb‎ ‎ ‎ DeltaBlock
 
 [Skip to Installation Steps](https://github.com/gabefletch/DeltaBlock#installation)<br>
 ### Readme Contents
