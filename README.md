@@ -127,6 +127,9 @@ This issue is difficult to resolve based on how NextDNS domain allowing works; s
 
 **Work Around:** Temporarily disable DeltaBlock.<br>
 # Changes
+## v2.3.1
+16 September 2024
+- Adds several safe domains to the Allow List
 ## v2.3
 11 March 2024
 - Adds several major ad-related and analytics-related domains to the denylist, now reaching up to 100% blocking capability on the Toolz Adblock Test for the first time
