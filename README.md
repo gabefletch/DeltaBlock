@@ -121,12 +121,14 @@ DeltaBlock also utilizes an internal Denylist that is periodically updated to co
 In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
 [View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
 # Known Issues
-## Meta Apps Connectivity
-- Using DeltaBlock has been known to cause issues with sites and apps by Meta (ie. Facebook, Instagram).<br>
-This issue is difficult to resolve based on how NextDNS domain allowing works; simply allowing `instagram.com` or `facebook.com` would also allow all ad subdomains, meaning that all Meta ad domains need to be manually entered.<br>
+There are no known issues at the moment.<br>
 
-**Work Around:** Temporarily disable DeltaBlock.<br>
+v2.4 released 19 September 2024 added additional safe domains that previously prevented Facebook and Meta Accounts from working as intended.<br>
+
 # Changes
+## v2.4
+19 September 2024
+- Adds additional safe domains to the Allow List that previously prevented Facebook and Meta Accounts from working as intended.
 ## v2.3.1
 16 September 2024
 - Adds several safe domains to the Allow List
