@@ -225,8 +225,8 @@ Direct support for other DNS services is planned in the future, but no official 
 All testing for blocking precentage is dervied from the open-source [Toolz Adblock Test](https://d3ward.github.io/toolz/adblock.html). This percentage is directly effected by differing network variables and may be skewed by the adblocker used by your browser along with DeltaBlock. The highest blocking percentage for DeltaBlock based on iOS and macOS devices is up to 99%. DeltaBlock's lowest internal testing percentage is 93%, although you may see lower numbers depending on your network environment.
 ### Why Should I Use DeltaBlock Instead of a Browser-based Adblocker?
 Because DeltaBlock is a DNS service, it blocks ads across every app on your device instead of being confined to just your browser. The greatest use for this is in-app adblocking on iOS and Android devices. We recommend that you use DeltaBlock and a browser-based adblocker (such as uBlock Origin) in tandem with one another to get rid of visual leftovers caused as a result of ads not loading.
-### Got another question?
-Feel free to reach out to DeltaBlock's developer at [dub.sh/gabe](https://dub.sh/gabe) via the contact form or your preferred social media.
+### Find something wrong?
+Feel free to open an Issue in this GitHub repo. 
 # NextDNS Protections
 The following is a list of protections enabled via NextDNS on DeltaBlock's custom profile:
 ### Threat Intelligence Feeds
