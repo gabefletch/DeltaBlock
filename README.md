@@ -1,10 +1,7 @@
 # δb‎ ‎ ‎ DeltaBlock
 
-[Skip to Installation Steps](https://github.com/gabefletch/DeltaBlock#installation)<br>
 ### Readme Contents
 [Installation](https://github.com/gabefletch/DeltaBlock#installation)<br>
-[Included Blocklists](https://github.com/gabefletch/DeltaBlock#included-blocklists)<br>
-[Known Issues](https://github.com/gabefletch/DeltaBlock#known-issues)<br>
 [Changes](https://github.com/gabefletch/DeltaBlock#changes)<br>
 [Frequently Asked Questions](https://github.com/gabefletch/DeltaBlock#FAQ)<br>
 
@@ -79,51 +76,10 @@ DNSOverTLS=yes
 `2a07:a8c0::4b:3fba`<br>
 `2a07:a8c1::4b:3fba`
 
-# Included Blocklists
-### NextDNS Ads & Trackers Blocklist
-A comprehensive blocklist to block ads & trackers in all countries.<br>
-- 151,328 entries.<br>
-### AdGuard DNS Filter
-A filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile ads filter, EasyList, and EasyPrivacy) and simplified specifically to be better compatible with DNS-level adblocking.<br>
-- 57,007 entries.<br>
-https://github.com/AdguardTeam/AdguardSDNSFilter
-### OISD
-Internet's #1 domain blocklist. Blocks Ads, Mobile Ads, Phishing, Malvertising, Malware, Tracking, Telemetry, Cryptojacking, Analyitics, Spyware, Ransomware, Misleading Marketing, etc.
-- 221,708 entries. <br>
-https://oisd.nl
-### AdGuard Extended Mobile Ads Filter
-Filter that blocks ads on mobile devices. Contains all known mobile ad networks.
-- 851 entries.<br>
-https://kb.adguard.com/general/adguard-ad-filters#mobile-ads-filter
-### Goodbye Ads
-Specifically designed for mobile ad protection.
-- 400,655 entries<br>
-  https://github.com/jerryn70/GoodbyeAds
-### antipopads
-List of popads.net domains.
-- 755 entries<br>
-https://github.com/Yhonay/antipopads
-### HaGeZi - Multi ULTIMATE
-Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.<br>
-- 441,998 entries<br>
-https://github.com/hagezi/dns-blocklists
-### Energized Ultimate
-Strictly blocks advertisements, malwares, spams, statistics & trackers on both web browsing and applications. Flagship Protection Pack from Energized Protection.
--  0 entries<br>
-https://github.com/EnergizedProtection/block
-### hBlock
-Improve your security and privacy by blocking ads, tracking and malware domains.
-- 440,885 entries<br>
-  https://hblock.molinero.dev<br>
-
 DeltaBlock also utilizes an internal Denylist that is periodically updated to compliment domains not covered by the Blocklists above.<br>
 [View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)<br>
 In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
 [View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
-# Known Issues
-There are no known issues at the moment.<br>
-
-v2.4 released 19 September 2024 added additional safe domains that previously prevented Facebook and Meta Accounts from working as intended.<br>
 
 # Changes
 ## v2.4
