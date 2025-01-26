@@ -280,7 +280,7 @@ forward-zone:
 # Changes
 ## v3.0.1
 26 January 2025
-- Adds additional domains to the Allowlist based on lists from Pi-hole Community, anudeepND, and Firebog for better compatibility. 
+- Adds additional domains to the Allowlist based on lists from Pi-hole Community, anudeepND, and Firebog for better compatibility in circumstances where DeltaBlock intercepts non-ad-serving domains.
 - This update addresses circumstances where YouTube History may have still occasionally been blocked from being saved properly; v3.0.1 will allow YouTube History to be saved 100% of the time.
 ## v3.0
 26 January 2025
