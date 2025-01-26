@@ -8,6 +8,40 @@
 A custom DNS profile for NextDNS capable of blocking up to 99%* of ads.<br>
 DeltaBlock stops both web-based and in-app ads from loading.<br>
 A project by [@gabefletch](https://github.com/gabefletch).<br>
+
+<details closed>
+<summary>Click for List of Supported Platforms</summary>
+<br>
+macOS<br>
+Windows<br>
+Redhat<br>
+Fedora<br>
+CentOS<br>
+Debian<br>
+Ubuntu<br>
+Raspbian<br>
+Alpine<br>
+Arch Linux<br>
+Manjaro<br>
+Nix<br>
+OpenSUSE<br>
+Solus<br>
+FreeBSD<br>
+NetBSD<br>
+OpenBSD<br>
+OpnSense<br>
+DragonFly<br>
+OpenWRT<br>
+AsusWRT-Merlin<br>
+pfSense<br>
+Ubiquiti EdgeOS / USG<br>
+Ubiquiti UnifiOS / UDM Family / UXG Family<br>
+VyOS<br>
+Synology DiskStation Manager DSM<br>
+Synology Router Manager SRM<br>
+DD-WRT<br>
+</details>
+
 ### Notice for New NextDNS Users
 DeltaBlock is only designed for use via NextDNS, which is limited to 300,000 queries per month without a subscription. The lowest tier with unlimited queries is available for $1.99/month. Using the DeltaBlock custom profile, however, is completely free.
 
@@ -30,6 +64,9 @@ DeltaBlock, like most adblockers, can be detected by sites with anti-adblock mea
 (Apple Devices Only)
 - [Click here](https://apple.nextdns.io/?profile=4b3fba) to be taken for the NextDNS Apple Config Profile generator for DeltaBlock.
 - Download and install the profile via the Settings app.
+### or via NextDNS Command-Line Client (macOS)
+- Run `sh -c "$(curl -sL https://nextdns.io/install)"`
+- Follow the instructions, and use `4b3fba` as the Configuration ID if prompted.
 ## Windows
 ### Via DNS Over HTTPS (Windows 11 Only)
 - Open the Settings app
@@ -45,6 +82,9 @@ DeltaBlock, like most adblockers, can be detected by sites with anti-adblock mea
 ### or via NextDNS App (Not Recommended)
 - Install the NextDNS app by [clicking here](https://nextdns.io/download/windows/stable).
 - Enter the settings for NextDNS and enter `4b3fba` as the Configuration ID.
+### or via YogaDNS (Advanced)
+- Install YogaDNS by [clicking here](https://yogadns.com).
+- Follow the instructions for NextDNS at [yogadns.com/docs/nextdns](https://yogadns.com/docs/nextdns) and use `4b3fba` as the Configuration ID.
 
 ## Linux
 ### Via systemd-resolved
@@ -57,6 +97,74 @@ DNS=45.90.30.0#4b3fba.dns.nextdns.io
 DNS=2a07:a8c1::#4b3fba.dns.nextdns.io
 DNSOverTLS=yes
 ```
+### or via NextDNS Command-Line Client
+- Run `sh -c "$(curl -sL https://nextdns.io/install)"`
+- Follow the instructions, and use `4b3fba` as the Configuration ID if prompted.
+### or via dnsmasq
+- Use the following dnsmasq.conf:
+```
+no-resolv
+bogus-priv
+strict-order
+server=2a07:a8c1::
+server=45.90.30.0
+server=2a07:a8c0::
+server=45.90.28.0
+add-cpe-id=4b3fba
+```
+### or via Stubby
+- Use the following in stubby.yml:
+```
+round_robin_upstreams: 1
+upstream_recursive_servers:
+  - address_data: 45.90.28.0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 2a07:a8c0::0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 45.90.30.0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 2a07:a8c1::0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+```
+***Make sure Stubby is linked with OpenSSL 1.1.1 or higher as previous versions will not work with NextDNS or DeltaBlock.***
+### or via DNSCrypt
+- Use the following in dnscrypt-proxy.toml:
+```
+server_names = ['NextDNS-4b3fba']
+
+[static]
+  [static.'NextDNS-4b3fba']
+  stamp = 'sdns://AgEAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8HLzRiM2ZiYQ'
+```
+### or via Knot Resolver
+- Use the following in /etc/kresd/custom.conf:
+```
+policy.add(policy.all(policy.TLS_FORWARD({
+  {'45.90.28.0', hostname='4b3fba.dns.nextdns.io'},
+  {'2a07:a8c0::', hostname='4b3fba.dns.nextdns.io'},
+  {'45.90.30.0', hostname='4b3fba.dns.nextdns.io'},
+  {'2a07:a8c1::', hostname='4b3fba.dns.nextdns.io'}
+})))
+```
+### or via cloudflared
+- Use the following in /usr/local/etc/cloudflared/config.yml:
+```
+proxy-dns: true
+proxy-dns-upstream:
+ - https://dns.nextdns.io/4b3fba
+```
+### or via Unbound
+- Use the following in unbound.conf:
+```
+forward-zone:
+  name: "."
+  forward-tls-upstream: yes
+  forward-addr: 45.90.28.0#4b3fba.dns.nextdns.io
+  forward-addr: 2a07:a8c0::#4b3fba.dns.nextdns.io
+  forward-addr: 45.90.30.0#4b3fba.dns.nextdns.io
+  forward-addr: 2a07:a8c1::#4b3fba.dns.nextdns.io
+```
+***As a recursive resolver, Unbound chases CNAMEs. This may result in unexpected behavior when used in conjunction with a blocking DNS resolver like NextDNS and DeltaBlock. Please see [NLnetLabs/unbound/issues/132](https://github.com/NLnetLabs/unbound/issues/132) for more information.***
 
 ## ChromeOS
 ### Via Secure DNS
@@ -66,22 +174,118 @@ DNSOverTLS=yes
 - Select "With:Custom" and enter `https://dns.nextdns.io/4b3fba`
 
 ## Routers
-- Utilize the [NextDNS CLI Client](https://github.com/nextdns/nextdns/#nextdns-cli-client).
+### For Routers That Can Run Executables (Recommended)
+- Follow instructions at [/nextdns/nextdns/wiki](https://github.com/nextdns/nextdns/wiki)
+### or via IPv6
+- [Test your IPv6 connectivity](https://test-ipv6.com/) before following these steps.
+- Open the network preferences for your Router. This is usually accessed from your browser via a URL pointing to an IP Address.
+- Locate the DNS settings inside the interface.
+- Remove all addresses (if any), then add `2a07:a8c0::4b:3fba` and `2a07:a8c1::4b:3fba`.
+- Click "Save" or equivalent.<br>
 
-## DNS-over-TLS/QUIC
-`4b3fba.dns.nextdns.io`
-## DNS-over-HTTPS
-`https://dns.nextdns.io/4b3fba`
-## DNS via IPv6
-`2a07:a8c0::4b:3fba`<br>
-`2a07:a8c1::4b:3fba`
+***Some Routers might not support the IPv6 notation above. In that case, use:***<br>
+`2a07:a8c0:0000:0000:0000:0000:004b:3fba`<br>
+and<br>
+`2a07:a8c1:0000:0000:0000:0000:004b:3fba`<br>
+### or via IPv4 (With Linked IP)
+- Open the network preferences for your Router. This is usually accessed from your browser via a URL pointing to an IP Address.
+- Locate the DNS settings inside the interface.
+- Remove all addresses (if any), then add `45.90.28.32` and `45.90.30.32`.
+- Click "save" or equivalent.
+### or via dnsmasq
+- Use the following in dnsmasq.conf:
+```
+no-resolv
+bogus-priv
+strict-order
+server=2a07:a8c1::
+server=45.90.30.0
+server=2a07:a8c0::
+server=45.90.28.0
+add-cpe-id=4b3fba
+```
+### or via Stubby
+```
+round_robin_upstreams: 1
+upstream_recursive_servers:
+  - address_data: 45.90.28.0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 2a07:a8c0::0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 45.90.30.0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+  - address_data: 2a07:a8c1::0
+    tls_auth_name: "4b3fba.dns.nextdns.io"
+```
+***Make sure Stubby is linked with OpenSSL 1.1.1 or higher as previous versions will not work with NextDNS or DeltaBlock.***
+### or via pfSense
+- Go to Services → DNS Resolver, and on the tab General Settings, scroll down to the Custom Options box.
+- Enter the following:
+```
+server:
+  forward-zone:
+    name: "."
+    forward-tls-upstream: yes
+    forward-addr: 45.90.28.0#4b3fba.dns.nextdns.io
+    forward-addr: 2a07:a8c0::#4b3fba.dns.nextdns.io
+    forward-addr: 45.90.30.0#4b3fba.dns.nextdns.io
+    forward-addr: 2a07:a8c1::#4b3fba.dns.nextdns.io
+```
+### or via DNSCrypt
+- Use the following in dnscrypt-proxy.toml:
+```
+server_names = ['NextDNS-4b3fba']
 
-DeltaBlock also utilizes an internal Denylist that is periodically updated to compliment domains not covered by the Blocklists above.<br>
-[View DeltaBlock's Denylist here.](https://github.com/gabefletch/DeltaBlock/blob/main/denylist.md)<br>
-In addition to this Denylist, DeltaBlock also utilizes an internal Allowlist to allow certain trusted domains through.<br>
-[View DeltaBlock's Allowlist here.](https://github.com/gabefletch/DeltaBlock/blob/main/allowlist.md)
+[static]
+  [static.'NextDNS-4b3fba']
+  stamp = 'sdns://AgEAAAAAAAAAAAAOZG5zLm5leHRkbnMuaW8HLzRiM2ZiYQ'
+```
+### or via Knot Resolver
+- Use the following in /etc/kresd/custom.conf:
+```
+policy.add(policy.all(policy.TLS_FORWARD({
+  {'45.90.28.0', hostname='4b3fba.dns.nextdns.io'},
+  {'2a07:a8c0::', hostname='4b3fba.dns.nextdns.io'},
+  {'45.90.30.0', hostname='4b3fba.dns.nextdns.io'},
+  {'2a07:a8c1::', hostname='4b3fba.dns.nextdns.io'}
+})))
+```
+### or via Unbound
+- Use the following in unbound.conf:
+```
+forward-zone:
+  name: "."
+  forward-tls-upstream: yes
+  forward-addr: 45.90.28.0#4b3fba.dns.nextdns.io
+  forward-addr: 2a07:a8c0::#4b3fba.dns.nextdns.io
+  forward-addr: 45.90.30.0#4b3fba.dns.nextdns.io
+  forward-addr: 2a07:a8c1::#4b3fba.dns.nextdns.io
+```
+***As a recursive resolver, Unbound chases CNAMEs. This may result in unexpected behavior when used in conjunction with a blocking DNS resolver like NextDNS or DeltaBlock. Please see [/NLnetLabs/unbound/issues/132](https://github.com/NLnetLabs/unbound/issues/132) for more information.***
+### or via MikroTik
+- Run the following:
+```
+/tool fetch url=https://curl.se/ca/cacert.pem
+/certificate import file-name=cacert.pem
+/ip dns set servers=""
+/ip dns static add name=dns.nextdns.io address=45.90.28.0 type=A
+/ip dns static add name=dns.nextdns.io address=45.90.30.0 type=A
+/ip dns static add name=dns.nextdns.io address=2a07:a8c0:: type=AAAA
+/ip dns static add name=dns.nextdns.io address=2a07:a8c1:: type=AAAA
+/ip dns set use-doh-server=“https://dns.nextdns.io/4b3fba” verify-doh-cert=yes
+```
+### or via tailscale
+- Follow instructions at [tailscale.com/kb/1218/nextdns](https://tailscale.com/kb/1218/nextdns) and use `4b3fba` as the Configuration ID for DeltaBlock.
 
 # Changes
+## v3.0
+26 January 2025
+- Fixes an issue where YouTube watch history (and possibly other Google Account related history) would not save or be displayed properly when using DeltaBlock by adding `myactivity.google.com` to the Allowlist.
+- Adds support for NextDNS Command-Line installation for Linux and macOS
+- Adds support for dnsmasq, Stubby, DNSCrypt, Knot Resolver, cloudflared, and Unbound for installation on Linux and Routers
+- Adds support for pfSense, MikroTik, and tailscale for installation on Routers
+- Introduces new Router installation setup for Routers capable of running executables (NextDNS for Routers)
+- Deprecates usage of NextDNS CLI for Router installation
 ## v2.4
 19 September 2024
 - Adds additional safe domains to the Allow List that previously prevented Facebook and Meta Accounts from working as intended.
