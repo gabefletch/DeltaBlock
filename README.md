@@ -278,6 +278,10 @@ forward-zone:
 - Follow instructions at [tailscale.com/kb/1218/nextdns](https://tailscale.com/kb/1218/nextdns) and use `4b3fba` as the Configuration ID for DeltaBlock.
 
 # Changes
+## v3.0.1
+26 January 2025
+- Adds additional domains to the Allowlist based on lists from Pi-hole Community, anudeepND, and Firebog for better compatibility. 
+- This update addresses circumstances where YouTube History may have still occasionally been blocked from being saved properly; v3.0.1 will allow YouTube History to be saved 100% of the time.
 ## v3.0
 26 January 2025
 - Fixes an issue where YouTube watch history (and possibly other Google Account related history) would not save or be displayed properly when using DeltaBlock by adding `myactivity.google.com` to the Allowlist.
