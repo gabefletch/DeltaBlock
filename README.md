@@ -12,6 +12,8 @@ A project by [@gabefletch](https://github.com/gabefletch).<br>
 <details closed>
 <summary>Click for List of Supported Platforms</summary>
 <br>
+iOS<br>
+Android<br>
 macOS<br>
 Windows<br>
 Redhat<br>
