@@ -3,6 +3,10 @@
 DeltaBlock is a powerful DNS-based configuration for adblocking, phishing protection and increased privacy.<br>
 Powered by [NextDNS](https://nextdns.io)<br>
 A project by [@gabefletch](https://github.com/gabefletch)<br>
+
+> [!NOTE]
+> If you have security/privacy concerns, please see [DeltaBlock Security Policy](https://github.com/gabefletch/DeltaBlock?tab=security-ov-file)
+
 ### Latest Changes
 **v3.0.1.1** - 1/30/25 - Adds additional Google APIs, YouTube, and miscellaneous backend domains to the Allowlist for increased compatibility without sacrificing blocking effectiveness. See changelog for domain list.<br> 
 [View Changelog](https://github.com/gabefletch/DeltaBlock/blob/main/changelog.md)
