@@ -1,8 +1,32 @@
 # Allowlist
 DeltaBlock utilizes an internal Allowlist to allow certain trusted domains through. See the [DeltaBlock Changelog](https://github.com/gabefletch/DeltaBlock#changes) to know when domains are added to this list. <br>
 
-This list is accurate as of `v3.0.1 (1/26/25)`
+This list is accurate as of `v3.0.1.1 (1/29/25)`
 ```
+*.o.pki.goog
+
+*.ggpht.cn
+
+*.googlevideo.com
+
+*.wide-youtube.l.google.com
+
+*.withyoutube.com
+
+*.clients.google.com
+
+*.www.msftconnecttest.com
+
+*.connectivitycheck.android.com
+
+*.connectivitycheck.gstatic.com
+
+*.continuum.dds.microsoft.com
+
+*.vidtech.cbsinteractive.com
+
+*.appspot-preview.l.google.com
+
 *.clients6.google.com
 
 *.clients5.google.com
