@@ -5,7 +5,7 @@ Powered by [NextDNS](https://nextdns.io)<br>
 A project by [@gabefletch](https://github.com/gabefletch)<br>
 ### Latest Changes
 **v3.0.1.1** - 1/30/25 - Adds additional Google APIs, YouTube, and miscellaneous backend domains to the Allowlist for increased compatibility without sacrificing blocking effectiveness. See changelog for domain list.<br> 
-[View Changelog]
+[View Changelog](https://github.com/gabefletch/DeltaBlock/blob/main/changelog.md)
 
 
 <details closed>
