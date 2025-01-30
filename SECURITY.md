@@ -1,5 +1,4 @@
 # DeltaBlock Security Policy
-Last Updated: `30 January 2025` at `3:41PM EST`<br>
 
 Security concerns regarding DeltaBlock and sharing NextDNS Configuration IDs have been raised by community members at [help.nextdns.io](https://help/nextdns.io). This Security Policy is designed to communicate to DeltaBlock users what level of privacy they can expect, and what they can do to ensure that this Security Policy is being maintained.<br>
 
@@ -17,7 +16,7 @@ The DeltaBlock GitHub repository previously included an affiliation link. This h
 ## About Logs
 NextDNS has the ability to save Logs of users utilizing shared Configuration IDs. Obviously, this is a security concern for users of DeltaBlock. However, the Logs feature is entirely disabled in the DeltaBlock profile settings.
 
-## Methods of Verifying Disabeled Log Status
+## Methods of Verifying Disabled Log Status
 There are two ways to verify that the DeltaBlock configuration does in fact have Logs disabled:<br>
 
 **A - By Emailing to View the Profile**<br>
