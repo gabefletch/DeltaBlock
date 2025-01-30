@@ -49,10 +49,6 @@ DD-WRT<br>
 > [!IMPORTANT]
 > DeltaBlock is a DNS configuration profile specifically designed for use with [NextDNS](https://nextdns.io) which has its own pricing model that DeltaBlock does not control. NextDNS limits unpaid users to 300,000 filtered queries per month. In other words, after 300,000 requests are blocked by DeltaBlock, nothing will continue being blocked until the next month. NextDNS offers unlimited queries and devices starting at $1.99 USD per month. Using the DeltaBlock custom config, however, is completely free.
 
-### NextDNS Affiliate Link
-Help DeltaBlock remain running by sharing this link:
-https://nextdns.io/?from=pyukpkuc
-
 # FAQ
 ### Should DeltaBlock replace my browser's adblocker extension?
 No. While DeltaBlock has a high blocking percentage, DeltaBlock or any DNS-enabled adblocking system is not capable of getting rid of the site elements where an ad would load like uBlock Origin is capable of. In other words, only using DeltaBlock would block ads just fine, but empty spaces would still be present on the page where the ads would originally be.
