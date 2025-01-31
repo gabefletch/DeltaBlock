@@ -1,7 +1,8 @@
 # Allowlist
 DeltaBlock utilizes an internal Allowlist to allow certain trusted domains through. See the [DeltaBlock Changelog](https://github.com/gabefletch/DeltaBlock#changes) to know when domains are added to this list. <br>
 
-This list is accurate as of `v3.0.1.1 (1/29/25)`
+This list is accurate as of `v3.0.1.1 (1/29/25)`<br>
+This is the last version of the Allowlist before end of service.<br>
 ```
 *.o.pki.goog
 
