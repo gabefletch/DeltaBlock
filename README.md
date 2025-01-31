@@ -1,5 +1,7 @@
 > [!CAUTION]
-> **This project has been deprecated and is no longer being maintained. The original Configuration ID used for DeltaBlock has since been deleted and all mentions of the original ID have been removed from the repository. The decision was made to discontinue DeltaBlock over security concerns, although no Logs were ever collected. The decision to keep the repository archived as read-only was made for the sake of those who wish to implement a similar filtering system on their own. The last version of the README starts after this line of text.**
+> **This project has been deprecated and is no longer being maintained. The original Configuration ID used for DeltaBlock has since been deleted and all mentions of the original ID have been removed from the repository. The decision was made to discontinue DeltaBlock over security concerns, although no Logs were ever collected. The decision to keep the repository archived as read-only was made for the sake of those who wish to implement a similar filtering system on their own.**
+> [!IMPORTANT]
+> **Because of the nature of GitHub, and several forks of this repository existing, there are still methods of tracking down the original Configuration ID. However, since the profile associated with it has been deleted, using it will do nothing unless NextDNS starts re-using IDs. Regardless, DO NOT enter the original Configuration ID or ANY Configuration ID into your dashboard unless you were the creator of the profile it is associated with.**
 
 # δb‎ ‎ ‎ DeltaBlock
 ### More than just an adblocker.
