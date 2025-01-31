@@ -1,7 +1,9 @@
-# DeltaBlock's Internal Denylist
+# Denylist
 This page lists domains entered in DeltaBlock's Denylist as part of its custom NextDNS configuration.<br>
 See the [DeltaBlock Changelog](https://github.com/gabefletch/DeltaBlock#changes) to know when domains are added to this list.<br>
 The purpose of the Denylist is to compliment DeltaBlock with domains to block that aren't covered in the Blocklists that DeltaBlock already utilizes.<br>
+
+This is the last version of the Denylist before end of service.
 
 ```
 *.instagram.ford1-1.fna.fbcdn.net
