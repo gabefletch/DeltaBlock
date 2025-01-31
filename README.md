@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **This project has been deprecated and is no longer being maintained. The original Configuration ID used for DeltaBlock has since been deleted and all mentions of the original ID have been removed from the repository. The decision was made to discontinue DeltaBlock over security concerns, although no Logs were ever collected. The decision to keep the repository archived as read-only was made for the sake of those who wish to implement a similar filtering system on their own. The last version of the README starts after this line of text.**
+
 # δb‎ ‎ ‎ DeltaBlock
 ### More than just an adblocker.
 DeltaBlock is a powerful DNS-based configuration for adblocking, phishing protection and increased privacy.<br>
