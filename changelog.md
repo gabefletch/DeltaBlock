@@ -1,4 +1,10 @@
 # DeltaBlock Master Changelog
+
+## End of Service
+31 January 2025
+- Deletes DeltaBlock Config ID
+- Reformats repository to archived state
+
 ## v3.0.1.1
 30 January 2025
 - Adds additional Google APIs, YouTube, and miscellaneous backend domains to the Allowlist for increased compatibility without sacrificing blocking effectiveness.
