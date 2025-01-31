@@ -3,7 +3,7 @@
 Security concerns regarding DeltaBlock and sharing NextDNS Configuration IDs have been raised by community members at [help.nextdns.io](https://help/nextdns.io). This Security Policy is designed to communicate to DeltaBlock users what level of privacy they can expect, and what they can do to ensure that this Security Policy is being maintained.<br>
 
 ## Things to Know First
-**"DeltaBlock"** - The NextDNS Configuration ID: `REDACTED`<br>
+**"DeltaBlock"** - The NextDNS Configuration ID:  `REDACTED`<br>
 **"Gabe Fletcher"** - Creator of the DeltaBlock Configuration ID<br>
 More may be added here if necessary.
 
